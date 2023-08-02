@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Berkshire+Swash&family=Caprasimo&family=Lato&family=Lobster&family=Rubik+Moonrocks&family=Satisfy&family=Shrikhand&display=swap');
+body
+{
+    background:azure;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-family: 'Shrikhand', cursive;
+}
+
+label 
+{
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+
+label[for="unit"] 
+{
+    font-weight: 400;
+    display: inline;
+}
+label[for="gender"] 
+{
+    font-weight: 400;
+    display: inline;
+}
+
+h4
+{
+    margin-top: 9px;
+    margin-bottom: 0px;
+}
+.container
+{
+    background:aliceblue ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width : 400px;
+    padding: 18px 30px;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.unit
+{
+    display: inline;
+}
+
+form
+{
+    display: inline;
+}
+
+button
+{
+    border: none;
+    border-radius: 5px;
+    padding : 10px;
+    margin : 6px;
+    background-color: black;
+    color :white; 
+    width: 180px;
+}
+
+input[type="number"]{
+    width :360px ;
+    padding : 8px;
+    margin :5px 12px ;
+    border-radius: 3px;
+    border : 1px solid black;
+}
+
+input[type="number"]::placeholder {
+    text-align: right; /* Align the placeholder text to the right */
+    position: absolute;
+    right: 5px;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield; /* Other modern browsers */
+}
+
+input[placeholder="feet"] {
+    width: 165px;
+    
+}
+
+input[placeholder="inches"] {
+    width: 165px;
+    margin: 0;
+}
+/* Hide the default radio buttons */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 0;
+}
+
+/* Optional: Add styles for the checked state */
+input[type="radio"]:checked {
+    background-color: #000;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+#Result {
+    display: flex; /* Use flex to create a block-level formatting context */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border : 1px solid black; */
+    align-self: start;
+  }
+h3{
+    margin-bottom: 8px;
+}
+
+
+
+#Result
+{
+    display: none;
+}
+
+
+#result
+{
+    font-size: 40px;
+    margin-left: -3px;
+    /* color: rgb(0, 217, 255); */
+}
+
+#classi
+{
+    font-weight:400px;
+    font-size: 30px;
+    text-align: right;
+    margin-top: 7px;
+}
+
+
+#box
+{
+    width: 392px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lobster', cursive;
+
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+
+    <div class="container">
+
+    
+
+        <form id="Form">
+
+            <div class="unit">
+                
+                <label>Units :</label>
+                <input type="radio" name="unit" value="metric" checked>
+                <label for="unit">Metric</label>
+                <input type="radio" name="unit" value="US units">
+                <label for="unit">US units</label>
+                   
+                
+            </div>
+
+            <div class="form-group">        
+                <label for="age">Age :</label>
+                <input type="number" name="age" placeholder="years" required/>
+            </div>
+
+
+            <div class="form-group">
+                <label>Gender :</label>
+                    <input type="radio" name="gender" value="male"  required>
+                    <label for="gender">Male</label>
+
+                
+                    <input type="radio" name="gender" value="female" required>
+                    <label for="gender">Female</label>
+                
+            </div>
+
+        <div class="form-group">
+            <label for="height">Height :</label>
+            <input type="number" name="height" placeholder="cm" required/>
+        </div>
+
+
+        <div class="form-group">
+            <label for="weight">Weight :</label>
+            <input type="number" name="weight" placeholder="kg" required/>
+        </div>
+
+        </form>
+
+    <div class="btn">
+        <button type="submit" id="calculate">Calculate</button>
+        <button id="clear">Clear</button>
+    </div>    
+    <div id="Result">
+        <h4>Your BMI is </h4>
+        <span id="box">
+        <span id="result"></span>
+        <span id="classi"></span>
+        </span>
+    </div>
+</div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
